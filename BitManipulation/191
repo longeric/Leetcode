@@ -3,6 +3,7 @@ public class Solution {
 
     public int hammingWeight(int n) {
         int sum=0;
+        // every time when loop, reduce least significant 1 to 0, until all 0
         while(n!=0){
             sum++;
             n&=(n-1);
